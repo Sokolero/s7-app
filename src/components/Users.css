@@ -6,15 +6,24 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  background-color: #E5EBEB;
+  background-color: #e5ebeb;
   padding: 12px 20px;
+  color: black;
   font-size: 18px;
   font-weight: 600;
+  transition: all 0.5s;
 }
 
 .users__item img {
   width: 60px;
   height: auto;
+}
+
+.users__item:hover {
+  background-color: #dede53;
+  border-radius: 12px;
+  transform: translateX(1em);
+  transition: transform 0.5s, background-color 0.5s, border-radius 0.5s;
 }
 
 .users__info {

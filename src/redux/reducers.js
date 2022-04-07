@@ -8,28 +8,30 @@ const initialState = {
   users: [],
   usersRequest: "none",
   errors: []
-}
+};
 
-const rootReducer = (state=initialState, action) => {
+const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_USERS_REQUEST:
       return {
         ...state,
-        usersRequest: "request",
-      }
+        usersRequest: "request"
+      };
     case GET_USERS_SUCCESS:
       return {
         ...state,
         users: [...action.payload],
-        usersRequest: "success",
-      }
+        usersRequest: "success"
+      };
     case GET_USERS_FAILURE:
       return {
         ...state,
         usersRequest: "failure",
         errors: action.payload
-      }
+      };
+    default:
+      return state;
   }
-}
+};
 
 export default rootReducer;
