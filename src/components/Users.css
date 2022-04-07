@@ -1,0 +1,24 @@
+ul {
+  list-style-type: none;
+}
+
+.users__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #E5EBEB;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.users__item img {
+  width: 60px;
+  height: auto;
+}
+
+.users__info {
+  flex-basis: 200px;
+
+  text-transform: uppercase;
+}
